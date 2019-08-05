@@ -13,7 +13,7 @@ RUN docker-php-ext-install zip
 RUN docker-php-ext-install gd
 
 # Install limesurvey
-RUN curl -o /tmp/limesurvey.tar.gz https://download.limesurvey.org/latest-stable-release/limesurvey3.17.8+190722.tar.gz 
+RUN curl -o /tmp/limesurvey.tar.gz https://download.limesurvey.org/latest-stable-release/limesurvey3.17.9+190731.tar.gz 
 RUN tar xvzf /tmp/limesurvey.tar.gz -C /var/www/html
 RUN rm -rf /tmp/limesurvey.tar.gz
 RUN chmod -R 777 /var/www/html/limesurvey/tmp
